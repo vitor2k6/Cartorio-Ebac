@@ -123,7 +123,8 @@ int main()
 		printf("Escolha Sua Opção Desejada: \n\n");
 		printf("\t1 - Registrar Usuários\n ");
 		printf("\t2 - Consultar Usuários\n ");
-		printf("\t3 - Deletar Usuários\n\n ");
+		printf("\t3 - Deletar Usuários\n ");
+		printf("\t4 - Deseja Sair Do Sistema\n\n");
 		printf("Opção Desejada:"); //fim do menu
 
 		scanf("%d", &opcao);	//armazenagem de escolha do ususário
@@ -145,6 +146,11 @@ int main()
 				deletar();
 				break;
 				
+			case 4:
+				printf("Obrigado, Sistema Desligando");
+				return 0;
+				break;
+			
 			default:
 				printf("opção indiiponível\n");
 				system("pause");
